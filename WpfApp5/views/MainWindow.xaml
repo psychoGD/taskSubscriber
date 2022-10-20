@@ -6,13 +6,14 @@
         xmlns:local="clr-namespace:WpfApp5"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <StackPanel Orientation="Horizontal">
-            <Button Margin="200,0,20,0" Width="200" Height="100" Name="Youtuber" Content="Youtuber"></Button>
-            <Button Width="200" Height="100" Name="Subscriber" Content="Subscriber"></Button>
-        </StackPanel>
-        
-        
-        
+    <Grid Name="MainGrid">
+        <Grid Name="SecondGrid">
+            <StackPanel Orientation="Horizontal">
+                <Button Margin="200,0,20,0" Width="200" Height="100" Name="Youtuber" Content="Youtuber" 
+                        ></Button>
+                <Button Width="200" Height="100" Name="Subscriber" Content="Subscriber"
+                        Command="{Binding SubscriberCommand}"></Button>
+            </StackPanel>
+        </Grid> 
     </Grid>
 </Window>

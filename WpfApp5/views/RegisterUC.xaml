@@ -6,7 +6,18 @@
              xmlns:local="clr-namespace:WpfApp5.views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-            
+    <Grid Background="White">
+        <Button Width="50" Height="50" VerticalAlignment="Top" HorizontalAlignment="Left" Content="Back"
+                Command="{Binding BackCommand}"></Button>
+        <StackPanel Height="300">
+            <Label Width="250" Height="40" Content="Username" Foreground="Gray" FontSize="20"></Label>
+            <TextBox Width="250" Height="30" Background="White" BorderThickness="0,0,0,5" 
+                     Text="{Binding Username,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></TextBox>
+            <Label Width="250" Height="40" Foreground="Red" FontSize="16"
+                   Content="{Binding ErrorText,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></Label>
+            <Button Width="250" Height="40" BorderThickness="1,1,1,5" Content="Register"
+                    Command="{Binding RegisterCommand}"></Button>
+        </StackPanel>
+        
     </Grid>
 </UserControl>

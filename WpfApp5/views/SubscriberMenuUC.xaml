@@ -6,7 +6,16 @@
              xmlns:local="clr-namespace:WpfApp5.views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-            
+    <Grid Background="White">
+        <Button VerticalAlignment="Top" 
+                HorizontalAlignment="Left" 
+                Width="50" Height="50" 
+                Content="Back" 
+                Command="{Binding BackCommand}"></Button>
+        <StackPanel>
+            <Button Width="200" Height="50" Content="Sign In" Margin="0,50,0,50"></Button>
+            <Button Width="200" Height="50" Content="Register" 
+                    Command="{Binding RegisterCommand}"></Button>
+        </StackPanel>  
     </Grid>
 </UserControl>

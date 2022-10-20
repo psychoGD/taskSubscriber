@@ -5,6 +5,8 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
+using WpfApp5.Models;
 
 namespace WpfApp5
 {
@@ -13,5 +15,8 @@ namespace WpfApp5
     /// </summary>
     public partial class App : Application
     {
+        public static Grid MainGrid;
+        public static Subscriber subscriber;
+        public static Database database= new Database();
     }
 }

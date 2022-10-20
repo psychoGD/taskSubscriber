@@ -12,20 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using WpfApp5.ViewModels;
 
-namespace WpfApp5
+namespace WpfApp5.views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for FollowingPostUC.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class FollowingPostUC : UserControl
     {
-        public MainWindow()
+        public FollowingPostUC()
         {
             InitializeComponent();
-            App.MainGrid = this.MainGrid;
-            this.DataContext = new MainViewModel();
         }
     }
 }

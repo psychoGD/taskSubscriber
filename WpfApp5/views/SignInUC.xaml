@@ -6,7 +6,15 @@
              xmlns:local="clr-namespace:WpfApp5.views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-            
+    <Grid Background="White">
+        <StackPanel Height="300">
+            <Label Width="250" Height="40" Content="Username" Foreground="Gray" FontSize="20" 
+                   HorizontalContentAlignment="Center"></Label>
+            <TextBox Width="250" Height="30"  BorderThickness="0,0,0,5" Margin="0,0,0,50" 
+                     Text="{Binding Username,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"  
+                     Background="White" BorderBrush="SlateGray"></TextBox>
+            <Button Width="200" Height="50" BorderThickness="1,1,1,3" Content="Sign In"
+                    Command="{Binding SignInCommand}"></Button>
+        </StackPanel>
     </Grid>
 </UserControl>

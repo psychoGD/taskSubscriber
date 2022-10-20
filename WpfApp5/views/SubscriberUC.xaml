@@ -6,7 +6,33 @@
              xmlns:local="clr-namespace:WpfApp5.views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
+    <Grid x:Name="MainGrid" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <!--<ScrollViewer Name="sv" 
+                  HorizontalScrollBarVisibility="Auto" 
+                  Grid.Row="1" VerticalScrollBarVisibility="Hidden">
+            <StackPanel Name="MainStackPanel" 
+                    Background="Transparent">
+
+                --><!--MouseMove="sp_MouseMove"--><!--
+            </StackPanel>
+        </ScrollViewer>-->
+        <Button VerticalAlignment="Top" HorizontalAlignment="Left" Content="Back" Width="30" Height="30"></Button>
+        <Label Content=""></Label>
+        <StackPanel x:Name="MainStackPanel" Width="600">
             
+        </StackPanel>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Content="Discover" FontSize="16"></Button>
+            <Button Grid.Column="1" Content="Following Post" FontSize="16"></Button>
+        </Grid>
+        
     </Grid>
 </UserControl>
